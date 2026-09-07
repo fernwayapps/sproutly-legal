@@ -111,10 +111,31 @@ th {
 
 .nav {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
   margin-bottom: 28px;
   font-size: 14px;
 }
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.langswitch {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.langswitch a { color: var(--muted); }
+.langswitch a:hover { color: var(--accent); }
+.langswitch .current { color: var(--accent); }
 
 footer {
   margin-top: 56px;
